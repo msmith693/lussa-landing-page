@@ -51,6 +51,10 @@ ul {
     align-items: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 .main {
     display: flex;
     flex-direction: column;
