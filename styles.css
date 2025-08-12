@@ -56,15 +56,15 @@ ul {
     flex-direction: column;
 }
 
-.container.one {
+.container.one, .container.four {
     background-color: #1F2937;
     /* max-height: 450px; */
     display: flex;
-    gap: 16px;
+    gap: 32px;
     padding: 5% 12% 6% 12%;
 }
 
-.info {
+.container.one .info, .container.four .info{
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ ul {
     gap: 8px;
 }
 
-.hero-main {
+.hero-main, .container.four .main-text {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
@@ -81,7 +81,7 @@ ul {
 
 }
 
-.hero-sub {
+.hero-sub, .container.four .sub-text{
     font-size: 18px;
     color: #E5E7EB;
 
@@ -97,7 +97,7 @@ ul {
     margin-right: 60%
 }
 
-.flower {
+.flower, .band-photo {
     border-radius: 4px;
     max-width: 50%;
     height: auto;
@@ -170,8 +170,12 @@ ul {
     text-align: end;
     font-weight: 900;
 }
-
+/* 
 .container.four{
+
+} */
+
+.container.five{
     display: flex;
     height: 350px;
     background-image: url(lussa-images/piano-closeup.png);
@@ -197,18 +201,18 @@ ul {
     width: 75%;
 }
 
-.main-text {
+.container.five .main-text {
     color: #F9FAF8;
     font-size: 20px;
     font-weight: 900;
 }
 
-.sub-text {
+.container.five .sub-text {
     color: #E5E7EB;
     font-size: 18px;
 }
 
-.container.four button {
+.container.five button {
     background-color: #474747;
     color: #E5E7EB;
     /* border-color: #E5E7EB;
